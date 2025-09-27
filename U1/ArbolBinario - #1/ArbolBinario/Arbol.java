@@ -1,3 +1,4 @@
+package ArbolBinario;
 public class Arbol {
     Nodo raiz;
     public Arbol(){
@@ -46,5 +47,23 @@ public class Arbol {
             System.out.print(nodo.getValor() +"   ");
             imprimir(nodo.getNodoDer());
         }
+    }
+      public static void main(String[] args) {
+        Arbol arbol = new Arbol();
+
+        arbol.insertar(arbol.raiz, 50);
+        arbol.insertar(arbol.raiz, 30);
+        arbol.insertar(arbol.raiz, 70);
+        arbol.insertar(arbol.raiz, 20);
+        arbol.insertar(arbol.raiz, 40);
+        arbol.insertar(arbol.raiz, 60);
+        arbol.insertar(arbol.raiz, 80);
+
+        System.out.println("Recorrido Inorden del árbol:");
+        arbol.imprimir(arbol.raiz);
+
+        System.out.println("\n\nPruebas de búsqueda:");
+        arbol.buscar(arbol.raiz, 40); 
+        arbol.buscar(arbol.raiz, 90); 
     }
 }

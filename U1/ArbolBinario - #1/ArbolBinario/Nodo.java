@@ -1,3 +1,5 @@
+package ArbolBinario;
+
 public class Nodo {
     private int valor;
     private Nodo nodoIzq;

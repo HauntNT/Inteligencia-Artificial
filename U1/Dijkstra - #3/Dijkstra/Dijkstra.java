@@ -1,3 +1,4 @@
+package Dijkstra;
 import java.util.*;
 
 public class Dijkstra {
