@@ -1,0 +1,6 @@
+# Machine specific files
+.venv
+
+# Large space data
+dataset
+dataset_faces_clean
